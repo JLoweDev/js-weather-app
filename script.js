@@ -1,8 +1,6 @@
-const btn = document.getElementById('btn');
-
 async function getWeather() {
     const response = await fetch(
-        'https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=b559fa679543062582bf71f3041919d1',
+        'https://api.openweathermap.org/data/2.5/weather?q=London&appid=b559fa679543062582bf71f3041919d1',
         { mode: 'cors' }
     );
     const weatherData = await response.json();
@@ -11,4 +9,4 @@ async function getWeather() {
     console.log(weatherData.weather[0].main);
 }
 
-btn.addEventListener('click', getWeather)
+getWeather();
