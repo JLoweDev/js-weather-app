@@ -90,3 +90,11 @@ main {
   justify-content: center;
   background-color: #f1f2f6;
 }
+
+#cityInput {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: #ff6348 solid 2px;
+  border-radius: 50px;
+}
