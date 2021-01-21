@@ -1,7 +1,9 @@
+const cityInput = document.getElementById('cityInput');
+
 let units = 'metric';
 let city = 'London';
 
-async function getWeather() {
+async function getWeather(str) {
     const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=b559fa679543062582bf71f3041919d1`,
         { mode: 'cors' }
@@ -13,5 +15,12 @@ async function getWeather() {
     rawTemp = weatherData.main.temp;
     temp = Math.round(rawTemp);
 }
+
+cityInput.addEventListener('keypress', function(e){
+    if(e.keyCode === 13) {
+        console.log(e.target.value);
+        city = e.target.value;
+    }
+});
 
 getWeather();
