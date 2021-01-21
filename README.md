@@ -13,8 +13,16 @@ Create a weather app with an API and use of async await javascript. App must be 
 1. ~~Setup a form that allows users to search a location~~
 1. ~~Display on screen~~
 1. ~~Style it~~
-1. Push to github pages
+1. ~~Push to github pages~~
 
 ---
 
 ## Bugs
+
+---
+
+## Learned & Used
+
+1. API integration
+1. JSON
+1. Async & Await
