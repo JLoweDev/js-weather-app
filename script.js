@@ -2,6 +2,7 @@ const cityInput = document.getElementById('cityInput');
 const locationTitle = document.getElementById('locationTitle');
 const weatherTitle = document.getElementById('weatherTitle');
 const tempTitle = document.getElementById('tempTitle');
+const changeUnits = document.getElementById('changeUnits');
 
 let units = 'metric';
 let city = 'London';
@@ -35,6 +36,18 @@ function render() {
 cityInput.addEventListener('keypress', function(e){
     if(e.keyCode === 13) {
         city = e.target.value;
+        getWeather();
+    }
+});
+
+changeUnits.addEventListener('click', function() {
+    if(units == 'metric') {
+        units = 'imperial';
+        changeUnits.innerHTML = '°F';
+        getWeather();
+    } else {
+        units = 'metric';
+        changeUnits.innerHTML = '°C'
         getWeather();
     }
 });
