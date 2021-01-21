@@ -1,4 +1,7 @@
 const cityInput = document.getElementById('cityInput');
+const locationTitle = document.getElementById('locationTitle');
+const weatherTitle = document.getElementById('weatherTitle');
+const tempTitle = document.getElementById('tempTitle');
 
 let units = 'metric';
 let city = 'London';
