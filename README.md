@@ -10,8 +10,8 @@ Create a weather app with an API and use of async await javascript. App must be 
 
 1. ~~Setup initial files~~
 1. ~~Write function for API to standard location (London)~~
-1. Setup a form that allows users to search a location
-1. Display on screen
+1. ~~Setup a form that allows users to search a location~~
+1. ~~Display on screen~~
 1. Style it
 1. Push to github pages
 
