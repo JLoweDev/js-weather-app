@@ -17,12 +17,25 @@ async function getWeather(str) {
     weatherName = weatherData.weather[0].main;
     rawTemp = weatherData.main.temp;
     temp = Math.round(rawTemp);
+    render();
+}
+
+function render() {
+    let unitSuffix = '';
+    if(units == 'metric') {
+        unitSuffix = '°C';
+    } else {
+        unitSuffix = '°F';
+    };
+    locationTitle.innerHTML = `${cityName}, ${countryName}`
+    weatherTitle.innerHTML = `${weatherName}`
+    tempTitle.innerHTML = `${temp}${unitSuffix}`
 }
 
 cityInput.addEventListener('keypress', function(e){
     if(e.keyCode === 13) {
-        console.log(e.target.value);
         city = e.target.value;
+        getWeather();
     }
 });
 
