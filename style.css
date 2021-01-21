@@ -23,6 +23,36 @@ html {
   margin-top: 10px;
 }
 
+#changeUnits {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  border: #dfe4ea solid 3px;
+  background-color: #ff6348;
+  color: #dfe4ea;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.main-title {
+  color: #dfe4ea;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.main-title span {
+  color: #ff6348;
+}
+
+.header a {
+  font-size: 2rem;
+  color: #dfe4ea;
+  margin-right: 15px;
+}
+
 main {
   height: 100%;
   display: flex;
@@ -46,7 +76,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #dfe4ea;
 }
 
 .inputContainer {
