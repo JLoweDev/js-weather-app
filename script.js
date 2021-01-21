@@ -7,10 +7,11 @@ async function getWeather() {
         { mode: 'cors' }
     );
     const weatherData = await response.json();
-    console.log(weatherData.name);
-    console.log(weatherData.sys.country);
-    console.log(weatherData.weather[0].main);
-    console.log(weatherData.main.temp);
+    cityName = weatherData.name;
+    countryName = weatherData.sys.country;
+    weatherName = weatherData.weather[0].main;
+    rawTemp = weatherData.main.temp;
+    temp = Math.round(rawTemp);
 }
 
 getWeather();
